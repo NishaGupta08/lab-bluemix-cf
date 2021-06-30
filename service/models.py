@@ -37,6 +37,7 @@ import logging
 from retry import retry
 from cloudant.client import Cloudant
 from cloudant.query import Query
+from cloudant.adapters import Replay429Adapter
 from requests import HTTPError, ConnectionError
 
 # get configruation from enviuronment (12-factor)
